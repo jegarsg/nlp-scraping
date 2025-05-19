@@ -7,6 +7,7 @@ This repository contains two natural language-powered web scrapers using **spaCy
 
 
 ## 🗂 Folder Structure
+```bash
 nlp-scraping/
 ├── amgr/
 │ ├── amgr_nlp_scraper.py
@@ -21,6 +22,7 @@ nlp-scraping/
 ├── venv/
 ├── README.md
 └── requirements.txt
+````
 ---
 
 ## 🚀 Quick Start
