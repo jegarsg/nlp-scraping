@@ -2,7 +2,7 @@
 
 This repository contains two natural language-powered web scrapers using **spaCy** and **Selenium**:
 
-- 🐐 `amgr/`: Scraper for [American Meat Goat Registry (AMGR)](https://www.amgr.org/)
+- 🐐 `amgr/`: Scraper for [American Meat Goat Registry (AMGR)](https://www.amgr.org/frm_directorySearch.cfm)
 - 🐂 `shorthorn/`: Scraper for [Shorthorn DigitalBeef](https://shorthorn.digitalbeef.com/)
 
 
@@ -10,19 +10,18 @@ This repository contains two natural language-powered web scrapers using **spaCy
 
 nlp-scraping/
 ├── amgr/
-│ ├── amgr_nlp_scraper.py 
+│ ├── amgr_nlp_scraper.py
 │ ├── test_scraper.py
-│ └── spacy-env/ 
+│ └── spacy-env/
 │
 ├── shorthorn/
-│ ├── shorthorn_nlp_scraper.py 
-│ ├── test_scraper.py 
-│ └── spacy-env/ 
+│ ├── shorthorn_nlp_scraper.py
+│ ├── test_scraper.py
+│ └── spacy-env/
 │
-├── venv/ 
-├── README.md 
-└── requirements.txt 
-
+├── venv/
+├── README.md
+└── requirements.txt
 
 ---
 
