@@ -1,0 +1,4 @@
+spacy
+selenium
+webdriver-manager
+tabulate
