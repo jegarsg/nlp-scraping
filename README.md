@@ -7,7 +7,6 @@ This repository contains two natural language-powered web scrapers using **spaCy
 
 
 ## 🗂 Folder Structure
-
 nlp-scraping/
 ├── amgr/
 │ ├── amgr_nlp_scraper.py
@@ -22,7 +21,6 @@ nlp-scraping/
 ├── venv/
 ├── README.md
 └── requirements.txt
-
 ---
 
 ## 🚀 Quick Start
@@ -46,7 +44,7 @@ python amgr/amgr_nlp_scraper.py
 # Run the test script
 python amgr/test_scraper.py
 
-![alt text](image.png)
+![AMGR Output](shorthornimage.png)
 
 
 --shorthorn--
@@ -59,4 +57,4 @@ python shorthorn/shorthorn_nlp_scraper.py
 # Run the test script
 python shorthorn/test_scraper.py
 
-![alt text](image-1.png)
+![Shorthorn Output](images/image-1.png)
