@@ -149,11 +149,18 @@ def select_by_value(select_element, value):
     select_element.select_by_index(0)
 
 def select_option_by_text(select_element, target_text):
-    target_text_lower = target_text.lower()
+    target_text_lower = target_text.strip().lower()
+
     for option in select_element.options:
-        if target_text_lower in option.text.lower():
+        if option.text.strip().lower() == target_text_lower:
             select_element.select_by_visible_text(option.text)
-            print(f"✅ Selected option by text match: '{option.text}'")
+            print(f"✅ Selected option by exact match: '{option.text}'")
+            return True
+
+    for option in select_element.options:
+        if target_text_lower in option.text.strip().lower():
+            select_element.select_by_visible_text(option.text)
+            print(f"✅ Selected option by partial match: '{option.text}'")
             return True
     print(f"⚠️ Could not find option matching '{target_text}'. Selecting first option.")
     select_element.select_by_index(0)
@@ -287,7 +294,7 @@ if __name__ == "__main__":
 
         member_name = None
 
-        match = re.search(r"show\s+(.+)", command, re.IGNORECASE)
+        match = re.search(r"(?:member\s+name|member)\s+([a-zA-Z\s]+?)(?:\s+from|\s+in|$)", command, re.IGNORECASE)
         if match:
             candidate = match.group(1).strip()
             candidate_lower = candidate.lower()
